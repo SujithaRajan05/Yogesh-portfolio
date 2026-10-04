@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogeshwaran.S | Mechanical & Design Engineer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- HTML2PDF CDN for PDF Download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-gear"></i></span>
+                <span class="logo-text">YOGESHWARAN<span class="accent-text">.S</span></span>
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills & Tools</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn btn-primary" onclick="downloadResumePDF()">
+                    <i class="fa-solid fa-file-arrow-down"></i> Download Resume PDF
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="pulse-dot"></span> Mechanical Design Engineer @ Jaysan Agri Industrial
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">YOGESHWARAN.S</span>
+                </h1>
+                <h2 class="hero-subtitle">Mechanical & Automation Design Specialist</h2>
+                <p class="hero-description">
+                    Experienced Mechanical Design Engineer specializing in <strong>SOLIDWORKS, AutoCAD, Yaskawa Robotics, Laser Cutting Programming (Cypcut & Tubepro)</strong>, and <strong>Hydraulic Machinery</strong>. Proven track record in designing agri-industrial machinery, sweepers, assembly fixtures, and automation solutions.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">2.5+</span>
+                        <span class="stat-label">Years Industrial Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Major Agri Machinery Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Certified CAD Diplomas</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="downloadResumePDF()">
+                        <i class="fa-solid fa-download"></i> Download Resume (PDF)
+                    </button>
+                    <button class="btn btn-outline" onclick="openResumeModal()">
+                        <i class="fa-solid fa-eye"></i> View Online Resume
+                    </button>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa-solid fa-paper-plane"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="image-frame">
+                    <div class="tech-corner top-left"></div>
+                    <div class="tech-corner top-right"></div>
+                    <div class="tech-corner bottom-left"></div>
+                    <div class="tech-corner bottom-right"></div>
+                    <img src="assets/images/yogeshwaran.png" alt="Yogeshwaran.S - Mechanical Engineer" class="profile-img">
+                    <div class="experience-badge">
+                        <i class="fa-solid fa-industry"></i>
+                        <div>
+                            <strong>Coimbatore, India</strong>
+                            <span>Design & Production Engineer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Career Objective Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-user"></i> ABOUT ME</span>
+                <h2 class="section-title">Career Objective & Background</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card objective-card">
+                    <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>Career Objective</h3>
+                    <p>
+                        To work in a highly challenging atmosphere and technology, helping the organization while continuously growing professionally. Dedicated to providing sincere, meticulous, and innovative mechanical design and engineering work for industrial advancement.
+                    </p>
+                </div>
+
+                <div class="about-card details-card">
+                    <div class="card-icon"><i class="fa-solid fa-address-card"></i></div>
+                    <h3>Quick Information</h3>
+                    <ul class="info-list">
+                        <li><strong><i class="fa-solid fa-user"></i> Full Name:</strong> Yogeshwaran.S</li>
+                        <li><strong><i class="fa-solid fa-briefcase"></i> Current Role:</strong> Designer at Jaysan Agri Industrial</li>
+                        <li><strong><i class="fa-solid fa-location-dot"></i> Location:</strong> Coimbatore, Tamil Nadu</li>
+                        <li><strong><i class="fa-solid fa-envelope"></i> Email:</strong> <a href="mailto:mech218784@gmail.com">mech218784@gmail.com</a></li>
+                        <li><strong><i class="fa-solid fa-phone"></i> Phone:</strong> <a href="tel:7010465250">+91 7010465250</a></li>
+                    </ul>
+                </div>
+
+                <div class="about-card languages-card">
+                    <div class="card-icon"><i class="fa-solid fa-language"></i></div>
+                    <h3>Languages Known</h3>
+                    <div class="language-bars">
+                        <div class="lang-item">
+                            <span class="lang-name">Tamil</span>
+                            <div class="dots-rating">
+                                <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                            </div>
+                        </div>
+                        <div class="lang-item">
+                            <span class="lang-name">English</span>
+                            <div class="dots-rating">
+                                <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                            </div>
+                        </div>
+                        <div class="lang-item">
+                            <span class="lang-name">Telugu</span>
+                            <div class="dots-rating">
+                                <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-briefcase"></i> WORK HISTORY</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Current Job -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fa-solid fa-drafting-compass"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="job-status">CURRENT ROLE</span>
+                                <h3 class="job-title">MECHANICAL DESIGNER</h3>
+                                <h4 class="company-name"><i class="fa-solid fa-building"></i> JAYSAN AGRI INDUSTRIAL, COIMBATORE</h4>
+                            </div>
+                            <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> NOV 2024 – PRESENT</span>
+                        </div>
+                        <ul class="job-duties">
+                            <li><i class="fa-solid fa-check"></i> Finalized complete set of machining drawings, welding drawings, assembly drawings, and assembly flow processes for production team implementation.</li>
+                            <li><i class="fa-solid fa-check"></i> Designed and delivered major agricultural machinery: <strong>Ridge Plaster Machine</strong>, <strong>Nine Arm Hayrack Machine</strong>, <strong>16-Blade Mulcher Machine</strong>, and <strong>14-Blade Mulcher Machine</strong>.</li>
+                            <li><i class="fa-solid fa-check"></i> Developed additional customized <strong>Yaskawa Robot Fixture</strong> to expand automation capabilities and enhance welding/assembly precision.</li>
+                            <li><i class="fa-solid fa-check"></i> Prepared laser sheet cutting programs using <strong>Cypcut</strong> and tube cutting programs using <strong>Tubepro</strong> software.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Previous Job -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="job-title">TECHNICIAN – PROJECT DEVELOPMENT TEAM</h3>
+                                <h4 class="company-name"><i class="fa-solid fa-building"></i> ROOTS MULTICLEAN LTD, COIMBATORE</h4>
+                            </div>
+                            <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> APR 2022 – NOV 2024</span>
+                        </div>
+                        <ul class="job-duties">
+                            <li><i class="fa-solid fa-check"></i> Worked under engineering supervision to assemble, install, test, and maintain fluid power equipment and systems.</li>
+                            <li><i class="fa-solid fa-check"></i> Executed specialized servicing, repairing, and troubleshooting of hydraulic and pneumatic equipment.</li>
+                            <li><i class="fa-solid fa-check"></i> Handled key project developments including <strong>Ride-on Sweeper</strong>, <strong>Truck-Mounted Sweeper Machine</strong>, <strong>Macrom60</strong>, and <strong>City Sweeper Machines</strong>.</li>
+                            <li><i class="fa-solid fa-check"></i> Serviced high-pressure washers, forklift batteries/chargers, and various power tools.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Internship -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="job-title">ENGINEERING INTERN</h3>
+                                <h4 class="company-name"><i class="fa-solid fa-building"></i> HIROTEC INDIA PVT LTD, COIMBATORE</h4>
+                            </div>
+                            <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 15 DAYS INTERNSHIP</span>
+                        </div>
+                        <p class="internship-text">
+                            Gained intensive practical exposure to automotive body tooling, assembly line automation, sheet metal stamping, and industrial manufacturing standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills & Software Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-gears"></i> TECHNICAL EXPERTISE</span>
+                <h2 class="section-title">Software Knowledge & Core Competencies</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Software Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Design & Programming Software</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-card highlight-skill">
+                            <i class="fa-solid fa-cube"></i>
+                            <div>
+                                <h4>SOLIDWORKS</h4>
+                                <span>3D Modeling & Assembly Drawings</span>
+                            </div>
+                        </div>
+                        <div class="skill-card highlight-skill">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                            <div>
+                                <h4>AutoCAD</h4>
+                                <span>2D Drafting & Schematics</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-bolt"></i>
+                            <div>
+                                <h4>Cypcut Laser Software</h4>
+                                <span>Sheet Metal Laser Cutting Programming</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-circle-nodes"></i>
+                            <div>
+                                <h4>Tubepro Software</h4>
+                                <span>Tube Cutting Programming</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-robot"></i>
+                            <div>
+                                <h4>Yaskawa Robot Programming</h4>
+                                <span>Automation & Welding Fixtures</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-file-excel"></i>
+                            <div>
+                                <h4>MS Office Suite</h4>
+                                <span>Word, Excel, PowerPoint</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domain Technical Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h3>Engineering & Technical Domain</h3>
+                    </div>
+                    <div class="skill-list-grid">
+                        <div class="domain-item">
+                            <i class="fa-solid fa-oil-can"></i>
+                            <div>
+                                <h4>Hydraulics & Pneumatics</h4>
+                                <p>Fluid power systems, cylinder assemblies & valving</p>
+                            </div>
+                        </div>
+                        <div class="domain-item">
+                            <i class="fa-solid fa-tractor"></i>
+                            <div>
+                                <h4>Agricultural Machinery</h4>
+                                <p>Ridge Plaster, Baler, Mulcher, Hayrack, Forage Cutters</p>
+                            </div>
+                        </div>
+                        <div class="domain-item">
+                            <i class="fa-solid fa-broom"></i>
+                            <div>
+                                <h4>Industrial Cleaning Machines</h4>
+                                <p>Battery Ride-on, Track-Mounted & City Sweeper machines</p>
+                            </div>
+                        </div>
+                        <div class="domain-item">
+                            <i class="fa-solid fa-car"></i>
+                            <div>
+                                <h4>Automotive Engines</h4>
+                                <p>Ashok Leyland 101HP & John Deere 115HP engines</p>
+                            </div>
+                        </div>
+                        <div class="domain-item">
+                            <i class="fa-solid fa-sheet-plastic"></i>
+                            <div>
+                                <h4>Sheetmetal & Fabrication</h4>
+                                <p>Welding process planning, machining & sheetmetal layout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Skills -->
+                <div class="skill-category full-width">
+                    <div class="category-header">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <h3>Professional Strengths</h3>
+                    </div>
+                    <div class="strengths-flex">
+                        <div class="strength-pill"><i class="fa-solid fa-brain"></i> Problem Solving</div>
+                        <div class="strength-pill"><i class="fa-solid fa-people-group"></i> Teamwork & Collaboration</div>
+                        <div class="strength-pill"><i class="fa-solid fa-gauge-high"></i> Working Under Pressure</div>
+                        <div class="strength-pill"><i class="fa-solid fa-users-gear"></i> Manpower Handling</div>
+                        <div class="strength-pill"><i class="fa-solid fa-compass-drafting"></i> Design & Drafting Precision</div>
+                        <div class="strength-pill"><i class="fa-solid fa-microchip"></i> Robot Fixture Development</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Machinery Developed Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-industry"></i> PORTFOLIO HIGHLIGHTS</span>
+                <h2 class="section-title">Key Projects & Machinery Finalized</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-tractor"></i></div>
+                    <div class="project-tag">Jaysan Agri Industrial</div>
+                    <h3>Ridge Plaster Machine</h3>
+                    <p>Designed full set of machining drawings, welding drawings, and complete assembly flow process for production implementation.</p>
+                    <div class="tech-tags">
+                        <span>SOLIDWORKS</span>
+                        <span>Assembly Drawing</span>
+                        <span>Agri Machinery</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+                    <div class="project-tag">Automation Upgrade</div>
+                    <h3>Yaskawa Robot Fixture</h3>
+                    <p>Conceptualized and developed custom robot fixtures to improve automated welding precision and assembly cycle speed.</p>
+                    <div class="tech-tags">
+                        <span>Yaskawa Robot</span>
+                        <span>Fixture Design</span>
+                        <span>Cypcut Laser</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-cogs"></i></div>
+                    <div class="project-tag">Jaysan Agri Industrial</div>
+                    <h3>14 & 16 Blade Mulcher Machines</h3>
+                    <p>Finalized structural engineering, heavy blade assembly flow, and precision welding documentation for mass production.</p>
+                    <div class="tech-tags">
+                        <span>AutoCAD</span>
+                        <span>Sheetmetal</span>
+                        <span>Machining</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-wind"></i></div>
+                    <div class="project-tag">Jaysan Agri Industrial</div>
+                    <h3>Nine Arm Hayrack Machine</h3>
+                    <p>Created end-to-end design schematics, arm motion clearance checks, and component fabrication schematics.</p>
+                    <div class="tech-tags">
+                        <span>Drafting</span>
+                        <span>Fabrication</span>
+                        <span>SOLIDWORKS</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-truck-monster"></i></div>
+                    <div class="project-tag">Roots Multiclean Ltd</div>
+                    <h3>Ride-on & Truck-Mounted Sweepers</h3>
+                    <p>Assembled, tested, and maintained hydraulic and pneumatic sweepers including Macrom60 & City Sweeper machines.</p>
+                    <div class="tech-tags">
+                        <span>Hydraulics</span>
+                        <span>Pneumatics</span>
+                        <span>Fluidpower</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-car-battery"></i></div>
+                    <div class="project-tag">Roots Multiclean Ltd</div>
+                    <h3>High Pressure & Forklift Power Systems</h3>
+                    <p>Serviced and repaired high-pressure washers, forklift battery chargers, power tools, and industrial floor cleaning rigs.</p>
+                    <div class="tech-tags">
+                        <span>Power Tools</span>
+                        <span>Maintenance</span>
+                        <span>Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section class="section education-section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> ACADEMIC & QUALIFICATIONS</span>
+                <h2 class="section-title">Education & Certifications</h2>
+            </div>
+
+            <div class="edu-cert-grid">
+                <!-- Education Table -->
+                <div class="edu-container">
+                    <h3 class="sub-heading"><i class="fa-solid fa-school"></i> Academic Qualifications</h3>
+                    <div class="table-responsive">
+                        <table class="edu-table">
+                            <thead>
+                                <tr>
+                                    <th>Course</th>
+                                    <th>University / Board</th>
+                                    <th>Institute</th>
+                                    <th>Year</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight-row">
+                                    <td><strong>DME (Mechanical Eng.)</strong></td>
+                                    <td>Directorate of Technical Education</td>
+                                    <td>V.S.V.N Polytechnic College, Virudhunagar</td>
+                                    <td>2020</td>
+                                    <td><span class="score-badge">78.1%</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>HSC</strong></td>
+                                    <td>State Board</td>
+                                    <td>Govt Higher Secondary School, Kalligudi</td>
+                                    <td>2018</td>
+                                    <td><span class="score-badge">49%</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>SSLC</strong></td>
+                                    <td>State Board</td>
+                                    <td>Govt High School, Vadakkampatti</td>
+                                    <td>2016</td>
+                                    <td><span class="score-badge">75%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="cert-container">
+                    <h3 class="sub-heading"><i class="fa-solid fa-certificate"></i> Professional Certifications</h3>
+                    <div class="cert-cards">
+                        <div class="cert-card">
+                            <i class="fa-solid fa-award"></i>
+                            <div>
+                                <h4>Diploma in SOLIDWORKS</h4>
+                                <p>Certified 3D Mechanical Design & Assemblies</p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <i class="fa-solid fa-award"></i>
+                            <div>
+                                <h4>Diploma in AutoCAD</h4>
+                                <p>Certified 2D Drafting & Architectural schematics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-envelope"></i> GET IN TOUCH</span>
+                <h2 class="section-title">Contact Yogeshwaran.S</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Connect for Engineering & Design Opportunities</h3>
+                    <p>Currently working in Coimbatore and available for mechanical design engineering discussions, automation consultation, and CAD project collaborations.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="c-email-wrapper">
+                                <span class="c-label">Email Address</span>
+                                <div class="c-email-actions">
+                                    <a href="mailto:mech218784@gmail.com" class="c-value">mech218784@gmail.com</a>
+                                    <button class="btn-copy-sm" onclick="copyEmailToClipboard(event)" title="Copy Email">
+                                        <i class="fa-solid fa-copy"></i> <span id="copyText">Copy</span>
+                                    </button>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mech218784@gmail.com" target="_blank" class="btn-copy-sm" title="Compose in Gmail">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Gmail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span class="c-label">Phone Number</span>
+                                <a href="tel:7010465250" class="c-value">+91 7010465250</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span class="c-label">Work Location</span>
+                                <span class="c-value">Coimbatore, Tamil Nadu</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fa-solid fa-house"></i></div>
+                            <div>
+                                <span class="c-label">Permanent Address</span>
+                                <span class="c-value">2/73A Kamatchi Street, Vadakkampatti, Thirumangalam, Madurai</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <form id="portfolioContactForm" action="https://formsubmit.co/mech218784@gmail.com" method="POST" onsubmit="handleFormSubmit(event)">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="New Portfolio Message for Yogeshwaran">
+                        
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="e.g. John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="e.g. john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="e.g. Mechanical Design Opportunity">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Type your message here..."></textarea>
+                        </div>
+
+                        <div class="form-action-buttons">
+                            <button type="submit" id="submitBtn" class="btn btn-primary">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                            <button type="button" id="directMailBtn" class="btn btn-outline" onclick="sendDirectEmail()">
+                                <i class="fa-solid fa-envelope-open-text"></i> Direct Email (Gmail)
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div id="formStatus" class="form-status-box" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="logo-text">YOGESHWARAN<span class="accent-text">.S</span></span>
+                <p>Mechanical & Design Engineer | SOLIDWORKS & AutoCAD Specialist</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 Yogeshwaran.S. All Rights Reserved.</p>
+                <button class="scroll-top-btn" onclick="scrollToTop()" aria-label="Scroll to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Printable Resume Modal -->
+    <div class="modal" id="resumeModal">
+        <div class="modal-overlay" onclick="closeResumeModal()"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-file-pdf"></i> Resume Preview - Yogeshwaran.S</h3>
+                <div class="modal-actions">
+                    <button class="btn btn-primary btn-sm" onclick="downloadResumePDF()">
+                        <i class="fa-solid fa-download"></i> Download PDF
+                    </button>
+                    <button class="modal-close" onclick="closeResumeModal()">&times;</button>
+                </div>
+            </div>
+            
+            <!-- Exact Printable Resume HTML Template -->
+            <div class="modal-body" id="resumeContainer">
+                <div class="resume-paper" id="resumePrintableArea">
+                    <div class="resume-header-block">
+                        <div class="rh-left">
+                            <h1 class="r-name">YOGESHWARAN.S</h1>
+                            <h2 class="r-title">MECHANICAL ENGINEER</h2>
+                            <div class="r-contact-row">
+                                <span><i class="fa-solid fa-phone"></i> 7010465250</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Coimbatore</span>
+                                <span><i class="fa-solid fa-envelope"></i> mech218784@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-section-block">
+                        <h3 class="r-sec-title">CAREER OBJECTIVE</h3>
+                        <p class="r-text">To work in a highly challenging atmosphere and technology, helping of the organization and help myself to grow along the organization and give sincere and dedicated work to the organization.</p>
+                    </div>
+
+                    <div class="resume-section-block">
+                        <h3 class="r-sec-title">WORKING EXPERIENCE</h3>
+                        <div class="r-exp-item">
+                            <div class="r-exp-head">
+                                <strong>DESIGNER - JAYSAN AGRI INDUSTRIAL, COIMBATORE</strong>
+                                <span>NOV 2024 – PRESENT</span>
+                            </div>
+                            <ul class="r-bullets">
+                                <li>The complete set of machining drawings, welding drawings, assy drawing and assembly flow processes for the <strong>Ridge Plaster Machine</strong>, <strong>Nine Arm Hayrack Machine</strong>, and <strong>16-blade and 14-blade Mulcher machines</strong> has been finalized and handed over to the production team for implementation.</li>
+                                <li>Developed an additional robot fixture to improve automation capabilities.</li>
+                                <li>Programming software expertise: Cypcut laser sheet cutting & Tubepro tube cutting software, Yaskawa robot programming.</li>
+                            </ul>
+                        </div>
+
+                        <div class="r-exp-item">
+                            <div class="r-exp-head">
+                                <strong>TECHNICIAN - PROJECT DEVELOPMENT TEAM, ROOTS MULTICLEAN LTD, COIMBATORE</strong>
+                                <span>APRIL 2022 – NOV 2024</span>
+                            </div>
+                            <ul class="r-bullets">
+                                <li>Working under the supervision of an engineer or engineering staffs, assembly, install, maintain and test fluidpower equipment.</li>
+                                <li>Servicing, repairing and maintaining hydraulic equipment and systems.</li>
+                                <li>Working under projects like ride-on sweeper, truck-mounted sweeper machine, Macrom60, and City sweeper machines.</li>
+                                <li>Servicing all types of floor cleaning machines, forklift batteries & chargers, high pressure washer repair and service.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section-block">
+                        <h3 class="r-sec-title">INTERNSHIP TRAINING</h3>
+                        <p class="r-text">Attended 15-day internship training at <strong>HIROTEC INDIA PVT LTD, COIMBATORE</strong>.</p>
+                    </div>
+
+                    <div class="resume-section-block">
+                        <h3 class="r-sec-title">ACADEMIC QUALIFICATION</h3>
+                        <table class="r-table">
+                            <thead>
+                                <tr>
+                                    <th>COURSE</th>
+                                    <th>UNIVERSITY / BOARD</th>
+                                    <th>INSTITUTE</th>
+                                    <th>YEAR</th>
+                                    <th>PERCENTAGE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DME (Mechanical Eng.)</td>
+                                    <td>Directorate of Technical Education</td>
+                                    <td>V.S.V.N Polytechnic College, Virudhunagar</td>
+                                    <td>2020</td>
+                                    <td>78.1%</td>
+                                </tr>
+                                <tr>
+                                    <td>HSC</td>
+                                    <td>State Board</td>
+                                    <td>Govt Higher Sec School, Kalligudi</td>
+                                    <td>2018</td>
+                                    <td>49%</td>
+                                </tr>
+                                <tr>
+                                    <td>SSLC</td>
+                                    <td>State Board</td>
+                                    <td>Govt High School, Vadakkampatti</td>
+                                    <td>2016</td>
+                                    <td>75%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="resume-grid-2col">
+                        <div class="r-col">
+                            <h3 class="r-sec-title">SOFTWARE KNOWLEDGE</h3>
+                            <ul class="r-list">
+                                <li>SOLIDWORKS</li>
+                                <li>AutoCAD</li>
+                                <li>Cypcut Laser Cutting Software</li>
+                                <li>Tubepro Tube Cutting Software</li>
+                                <li>Yaskawa Robot Programming</li>
+                                <li>MS Office (Word, Excel, PowerPoint)</li>
+                            </ul>
+                        </div>
+                        <div class="r-col">
+                            <h3 class="r-sec-title">CERTIFICATIONS & STRENGTHS</h3>
+                            <ul class="r-list">
+                                <li>Diploma in SOLIDWORKS</li>
+                                <li>Diploma in AutoCAD</li>
+                                <li>Assembly, Machine Service & Hydraulics</li>
+                                <li>Problem Solving & Teamwork</li>
+                                <li>Manpower Handling under pressure</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section-block">
+                        <h3 class="r-sec-title">PERSONAL PROFILE</h3>
+                        <div class="r-profile-grid">
+                            <div><strong>D.O.B:</strong> 26/12/2000</div>
+                            <div><strong>Gender:</strong> Male</div>
+                            <div><strong>Marital Status:</strong> Single</div>
+                            <div><strong>Nationality:</strong> Indian</div>
+                            <div class="full-w"><strong>Address:</strong> 2/73A Kamatchi Street, Vadakkampatti, Thirumangalam, Madurai</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
